@@ -226,7 +226,7 @@ button:hover {
 </div>
 
 
-<button>🔎 ARA</button>
+<button onclick="urunAra()">🔎 ARA</button>
 
 
 </div>
@@ -262,7 +262,39 @@ Amazon'da Aç
 </div>
 
 
+<script>
 
+function urunAra(){
+
+document.querySelector(".product").innerHTML = `
+
+<h3>📦 Bioderma Atoderm Creme Ultra 500 ml</h3>
+
+<span class="tag">⭐ 4.8 Puan</span>
+
+<span class="tag">💬 1250 Yorum</span>
+
+<p>💰 Fiyat: 799 TL</p>
+
+<p>
+🏷️ Marka: Bioderma
+</p>
+
+
+<a class="amazon" 
+href="https://www.amazon.com.tr/" 
+target="_blank">
+
+Amazon'da Aç
+
+</a>
+
+`;
+
+
+}
+
+</script>
 </body>
 
 </html>
